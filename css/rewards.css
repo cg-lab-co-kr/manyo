@@ -44,102 +44,63 @@
   margin-top: 0.5rem;
 }
 
-.faq {
-  margin: 12rem 0 6.25vw 0;
+.reward {
+  margin: 12rem 0;
 }
 
-.faq-wrap {
+.reward-item {
+  /* margin-top: 3rem; */
+  margin-top: 1.5625vw;
+  display: flex;
+  gap: 2rem;
+}
+
+.reward-item li {
+  width: 100%;
+  gap: 3rem;
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 3.125vw;
-}
-
-.info-wrap li {
-  border-top: 2px solid var(--black20);
-  padding: 3rem 3.5rem;
-  position: relative;
-  width: 100%;
-  cursor: pointer;
-}
-
-.info-wrap li:first-child {
-  border-top: 4px solid var(--main-color);
-}
-
-.info-wrap li:last-child {
-  border-bottom: 2px solid var(--black20);
-}
-
-.info-wrap li.on {
+  align-items: center;
   background: var(--main-color10);
-}
-
-.info-wrap li::after {
-  content: "";
-  position: absolute;
-  top: 3rem;
-  right: 3%;
-  width: 4rem;
-  aspect-ratio: 1/1;
-  background: url(../img/arrow-m-bottom.png) no-repeat 50%;
-  transition: 0.4s;
-}
-
-.info-wrap li.on::after {
-  rotate: -180deg;
-}
-
-.faq-title {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-}
-
-.faq-title i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: var(--white100);
-  background: var(--main-color);
-}
-
-.faq-txt {
-  width: 80%;
-}
-
-.faq-txt h4 {
-  font-size: clamp(2.2rem, 2vw, 3rem);
-  font-weight: 700;
-  color: var(--title-color);
+  border-radius: 10px;
+  padding: 3.4rem 3rem;
   word-break: keep-all;
 }
 
-.answer-wrap {
-  margin-top: 4rem;
-  display: none;
+.reward-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reward-txt p {
   font-size: 1.8rem;
-  word-break: keep-all;
 }
 
-.answer-wrap strong {
+.reward-item figure {
+  max-width: 9.3rem;
+  min-width: 9.3rem;
+  width: 9.3rem;
+  aspect-ratio: 1/1;
+  background: var(--white100);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.reward-item li strong {
   font-weight: 600;
-  color: var(--main-color);
-}
-
-.answer-con {
-  display: flex;
-  gap: 3rem;
+  color: var(--title-color);
 }
 
 @media (max-width: 1440px) {
   .reward-item {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .reward-item li {
+    flex-direction: column;
+    text-align: center;
   }
 }
