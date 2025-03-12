@@ -11,26 +11,6 @@
   position: relative;
 }
 
-.vison-title::before,
-.vison-title::after {
-  content: "";
-  width: 24.6rem;
-  height: 15rem;
-  position: absolute;
-  background: url(../img/decoration-pic1.svg) no-repeat;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.vison-title::before {
-  left: 0;
-}
-
-.vison-title::after {
-  right: 0;
-  transform: translateY(-50%) scaleX(-1);
-}
-
 .vison-title p:nth-child(1) {
   color: var(--main-color);
 }
@@ -108,10 +88,10 @@
   color: var(--white100);
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1440px) {
   .vip-service {
     justify-content: flex-start;
-    gap: 5rem;
+    padding: 3rem;
   }
 
   .story .sec-title h3 {
@@ -124,11 +104,6 @@
 }
 
 @media (max-width: 768px) {
-  .vison-title::before,
-  .vison-title::after {
-    display: none;
-  }
-
   .vison-title p {
     width: 80%;
   }

@@ -655,7 +655,7 @@ nav::before {
 
 .visual-title h2 {
   font: 9.6rem/1.2 "Poppins", sans-serif;
-  font-size: clamp(6.5rem, 11.1146vw, 17.5rem);
+  font-size: clamp(5rem, 11.1146vw, 14.5rem);
   font-weight: 700;
 }
 
@@ -813,14 +813,6 @@ nav::before {
     align-items: center;
   }
 
-  .foot-list::before {
-    width: 122vw;
-  }
-
-  .foot-list::after {
-    display: none;
-  }
-
   .accredit {
     margin-top: 5rem;
   }
@@ -877,12 +869,9 @@ nav::before {
     align-items: center;
   }
 
-  .foot-list::before {
-    width: 122vw;
-  }
-
+  .foot-list::before,
   .foot-list::after {
-    display: none;
+    width: 122vw;
   }
 
   .foot-con {
